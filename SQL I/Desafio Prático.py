@@ -11,7 +11,7 @@ USE sistema_escola;
 # Criando a tabela "professores".
 CREATE TABLE professores(
 	id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(50) NOT NULL,
+    nome VARCHAR(100) NOT NULL,
     especialidade VARCHAR(25) NOT NULL,
     endereco VARCHAR(30)
 );
@@ -24,14 +24,14 @@ CREATE TABLE turmas(
 # Criando a tabela "disciplinas".
 CREATE TABLE disciplinas(
 	id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(20),
+    nome VARCHAR(50),
     qtd_aulas INT
 );
 # Criando a tabela "alunos".
 CREATE TABLE alunos(
 	# ID é o número de matrícula da tabela alunos.
 	id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(50) NOT NULL,
+    nome VARCHAR(100) NOT NULL,
     idade INT,
     endereco VARCHAR(30) NOT NULL,
     id_professor INT,
