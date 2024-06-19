@@ -13,7 +13,7 @@ USE concessionaria;
 # Criando a tabela "clientes".
 CREATE TABLE clientes(
 	id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(50) NOT NULL,
+    nome VARCHAR(100) NOT NULL,
     cpf CHAR(11) UNIQUE,
     endereco VARCHAR(30) NOT NULL,
     data_nasc DATE
@@ -21,8 +21,8 @@ CREATE TABLE clientes(
 # Criando a tabela "carros".
 CREATE TABLE carros(
 	id INT AUTO_INCREMENT PRIMARY KEY,
-    marca VARCHAR(30) NOT NULL,
-    modelo VARCHAR(30) NOT NULL,
+    marca VARCHAR(50) NOT NULL,
+    modelo VARCHAR(50) NOT NULL,
     ano_lanc YEAR NOT NULL,
     preco FLOAT NOT NULL,
     ar_cond BOOL NOT NULL
