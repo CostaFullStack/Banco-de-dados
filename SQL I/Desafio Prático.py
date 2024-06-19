@@ -10,7 +10,6 @@ CREATE DATABASE sistema_escola;
 USE sistema_escola;
 # Criando a tabela "professores".
 CREATE TABLE professores(
-	# ID é o número de matrícula da tabela professores.
 	id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
     especialidade VARCHAR(25) NOT NULL,
