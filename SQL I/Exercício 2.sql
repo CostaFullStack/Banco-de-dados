@@ -35,8 +35,3 @@ CREATE TABLE matriculas(
 -- Excluindo todos os dados da tabela "matriculas".
 -- Ao executar esse comando, a tabela será truncada ou seja, os dados serão excluídos, mas a estrutura permanecerá na memória para operações posteriores.
 TRUNCATE TABLE matriculas;
-
--- Excluindo todos os dados da tabela "matriculas"
--- Ao executar esse comando, a tabela será truncada ou seja, os dados serão excluídos, mas a estrutura permanecerá na memória para operações posteriores.
-TRUNCATE TABLE matriculas;
-
