@@ -32,12 +32,11 @@ CREATE TABLE matriculas(
     FOREIGN KEY (id_curso) REFERENCES cursos (id_curso)
 );
 
-<<<<<<< HEAD:SQL I/Exercício 2.sql
 -- Excluindo todos os dados da tabela "matriculas".
 -- Ao executar esse comando, a tabela será truncada ou seja, os dados serão excluídos, mas a estrutura permanecerá na memória para operações posteriores.
 TRUNCATE TABLE matriculas;
-=======
+
 -- Excluindo todos os dados da tabela "matriculas"
 -- Ao executar esse comando, a tabela será truncada ou seja, os dados serão excluídos, mas a estrutura permanecerá na memória para operações posteriores.
 TRUNCATE TABLE matriculas;
->>>>>>> 5a004a410d03b78775331e8d5aafba29469e4c83:SQL I/Exercício 2.py
+
