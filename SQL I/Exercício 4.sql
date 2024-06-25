@@ -4,18 +4,21 @@
 # Tabela "livros" com as seguintes colunas:
 # id, título, gênero, ano de lançamento, quantidade de páginas e id do autor.
 
-# Utilizando "DATABASE" com nome "biblioteca".
+-- Utilizando "DATABASE" com nome "biblioteca".
 CREATE DATABASE biblioteca;
-# Utilizando "USE" para utilizar o database "biblioteca".
+
+-- Utilizando "USE" para utilizar o "DATABASE" "biblioteca".
 USE biblioteca;
-# Criando a tabela "autores".
+
+-- Criando a tabela "autores".
 CREATE TABLE autores(
 	id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
     data_nasc DATE,
     nacionalidade VARCHAR(50)
 );
-# Criando a tabela "livros".
+
+-- Criando a tabela "livros".
 CREATE TABLE livros(
 	id INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(100) NOT NULL,
@@ -23,7 +26,7 @@ CREATE TABLE livros(
     ano_lanc YEAR,
     qtd_paginas INT,
     id_autor INT,
-    # Utilizando "FOREIGN KEY" para definir a chave estrangeira e "REFERENCES" para referenciar as outras tabelas.
+    -- Utilizando "FOREIGN KEY" para definir a chave estrangeira e "REFERENCES" para referenciar as outras tabelas.
     FOREIGN KEY(id_autor) REFERENCES autores(id)
     
 );

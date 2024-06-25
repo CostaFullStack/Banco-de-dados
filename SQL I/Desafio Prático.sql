@@ -4,32 +4,37 @@
 #Para a turma deverá conter um identificador, horário de início e dia de semana.
 #Para disciplina é importante que contenha um identificador, nome e quantidade de aulas.
 
-# Utilizando "DATABASE" com nome "sistema_escola".
+-- Utilizando "DATABASE" com nome "sistema_escola".
 CREATE DATABASE sistema_escola;
-# Utilizando "USE" para utilizar o database "questao_tres".
+
+-- Utilizando "USE" para utilizar o database "questao_tres".
 USE sistema_escola;
-# Criando a tabela "professores".
+
+-- Criando a tabela "professores".
 CREATE TABLE professores(
 	id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
     especialidade VARCHAR(25) NOT NULL,
     endereco VARCHAR(30)
 );
-# Criando a tabela "turmas".
+
+-- Criando a tabela "turmas".
 CREATE TABLE turmas(	
 	id INT AUTO_INCREMENT PRIMARY KEY,
     horario DATETIME,
     dia_semana VARCHAR(15)
 );
-# Criando a tabela "disciplinas".
+
+-- Criando a tabela "disciplinas".
 CREATE TABLE disciplinas(
 	id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(20),
     qtd_aulas INT
 );
-# Criando a tabela "alunos".
+
+-- Criando a tabela "alunos".
 CREATE TABLE alunos(
-	# ID é o número de matrícula da tabela alunos.
+	-- "id" é o número de matrícula da tabela alunos.
 	id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
     idade INT,
@@ -37,7 +42,7 @@ CREATE TABLE alunos(
     id_professor INT,
     id_turma INT,
     id_disciplina INT,
-    # Utilizando "FOREIGN KEY" para definir a chave estrangeira e "REFERENCES" para referenciar as outras tabelas.
+    -- Utilizando "FOREIGN KEY" para definir a chave estrangeira e "REFERENCES" para referenciar as outras tabelas.
     FOREIGN KEY (id_professor) REFERENCES professores(id),
     FOREIGN KEY (id_turma) REFERENCES turmas(id),
     FOREIGN KEY (id_disciplina) REFERENCES disciplinas(id)
