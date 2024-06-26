@@ -1,8 +1,8 @@
-# Questão 04) Crie um banco de dados chamado "biblioteca" e implemente as seguintes tabelas:
-# Tabela "autores" com as seguintes colunas:
-# id, nome, data de nascimento e nacionalidade.
-# Tabela "livros" com as seguintes colunas:
-# id, título, gênero, ano de lançamento, quantidade de páginas e id do autor.
+-- Questão 04) Crie um banco de dados chamado "biblioteca" e implemente as seguintes tabelas:
+-- Tabela "autores" com as seguintes colunas:
+-- id, nome, data de nascimento e nacionalidade.
+-- Tabela "livros" com as seguintes colunas:
+-- id, título, gênero, ano de lançamento, quantidade de páginas e id do autor.
 
 -- Utilizando "DATABASE" com nome "biblioteca".
 CREATE DATABASE biblioteca;
@@ -10,7 +10,7 @@ CREATE DATABASE biblioteca;
 -- Utilizando "USE" para utilizar o "DATABASE" "biblioteca".
 USE biblioteca;
 
--- Criando a tabela "autores".
+-- Criando a tabela com nome "autores".
 CREATE TABLE autores(
 	id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE autores(
     nacionalidade VARCHAR(50)
 );
 
--- Criando a tabela "livros".
+-- Criando a tabela com nome "livros".
 CREATE TABLE livros(
 	id INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(100) NOT NULL,

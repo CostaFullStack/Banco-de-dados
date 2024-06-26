@@ -1,4 +1,4 @@
-# Questão 02) Crie uma tabela "produtos" com as colunas "id_produto", "nome_produto" e "preco". Adicione uma constraint de verificação para garantir que o preço do produto seja maior que zero.
+-- Questão 02) Crie uma tabela "produtos" com as colunas "id_produto", "nome_produto" e "preco". Adicione uma constraint de verificação para garantir que o preço do produto seja maior que zero.
 
 -- Criando a tabela com nome "produtos".
 CREATE TABLE produtos(

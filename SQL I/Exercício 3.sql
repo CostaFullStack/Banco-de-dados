@@ -1,4 +1,4 @@
-# Questão 03) Usando o comando DROP DATABASE, exclua o banco de dados "escola". Certifique-se de que você tenha feito um backup dos dados, pois essa ação apagará todo o banco de dados.
+-- Questão 03) Usando o comando DROP DATABASE, exclua o banco de dados "escola". Certifique-se de que você tenha feito um backup dos dados, pois essa ação apagará todo o banco de dados.
 
 -- Utilizando "DATABASE" com nome "questao_tres".
 CREATE DATABASE questao_tres;
@@ -6,22 +6,21 @@ CREATE DATABASE questao_tres;
 -- Utilizando "USE" para utilizar o "DATABASE" "questao_tres".
 USE questao_tres;
 
--- Criando a tabela "alunos".
+-- Criando a tabela com nome "alunos".
 CREATE TABLE alunos(
 	id_aluno INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     idade INT
 );
 
--- Criando a tabela "cursos".
+-- Criando a tabela com nome "cursos".
 CREATE TABLE cursos(
 	id_curso INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
-    carga_horaria INT
-    
+    carga_horaria INT 
 );
 
--- Criando a tabela "matriculas".
+-- Criando a tabela com nome "matriculas".
 CREATE TABLE matriculas(
 	id INT AUTO_INCREMENT PRIMARY KEY,
     id_aluno INT,

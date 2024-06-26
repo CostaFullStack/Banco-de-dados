@@ -1,4 +1,4 @@
-# Questão 04) Escreva uma consulta que recupere o nome de todos os alunos que tenham mais de 20 anos e que estejam matriculados em cursos de "Matemática". Use uma subconsulta para realizar essa tarefa.
+-- Questão 04) Escreva uma consulta que recupere o nome de todos os alunos que tenham mais de 20 anos e que estejam matriculados em cursos de "Matemática". Use uma subconsulta para realizar essa tarefa.
 
 -- Utilizando o comando "SELECT" para recuperar os dados da coluna "alunos"
 SELECT nome 

@@ -1,4 +1,4 @@
-# Questão 01) Crie uma tabela "pedidos" com as colunas "id_pedido", "id_cliente" e "data_pedido". Adicione uma constraint de chave estrangeira na coluna "id_cliente" para garantir que um pedido só possa ser feito por um cliente existente na tabela "clientes".
+-- Questão 01) Crie uma tabela "pedidos" com as colunas "id_pedido", "id_cliente" e "data_pedido". Adicione uma constraint de chave estrangeira na coluna "id_cliente" para garantir que um pedido só possa ser feito por um cliente existente na tabela "clientes".
 
 -- Criando a tabela com nome "clientes".
 CREATE TABLE clientes(

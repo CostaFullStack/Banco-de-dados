@@ -1,12 +1,12 @@
-#Questão 5) Crie um banco de dados chamado "concessionaria" e implemente as seguintes tabelas:
-# Tabela "clientes" com as seguintes colunas:
-# id, nome, cpf, endereço, data de nascimento.
-# Tabela "carros" com as seguintes colunas:
-# id, marca, modelo, ano lançamento, preço, ar-condicionado.
-# Tabela "compras" com as seguintes colunas:
-# id, id do cliente, id do carro, data de compra. 
-# Faça a iserção de 10 clientes, 15 carros e realize 6 vendas no bando da "concessionaria". Atualize o nome e cpf do 6º cliente, atualize o ano de lançamento dos carros 12, 8, 4 e delete os carros 14 e 15 e os clientes 2 e 4.
-# Selecione todos os clientes, todos os carros e todas as vendas.
+-- Questão 5) Crie um banco de dados chamado "concessionaria" e implemente as seguintes tabelas:
+-- Tabela "clientes" com as seguintes colunas:
+-- id, nome, cpf, endereço, data de nascimento.
+-- Tabela "carros" com as seguintes colunas:
+-- id, marca, modelo, ano lançamento, preço, ar-condicionado.
+-- Tabela "compras" com as seguintes colunas:
+-- id, id do cliente, id do carro, data de compra. 
+-- Faça a iserção de 10 clientes, 15 carros e realize 6 vendas no bando da "concessionaria". Atualize o nome e cpf do 6º cliente, atualize o ano de lançamento dos carros 12, 8, 4 e delete os carros 14 e 15 e os clientes 2 e 4.
+-- Selecione todos os clientes, todos os carros e todas as vendas.
 
 -- Criando a "DATABASE" com nome "concessionaria".
 CREATE DATABASE concessionaria;
@@ -63,7 +63,7 @@ INSERT INTO clientes
 INSERT INTO carros
 (marca, modelo, ano_lanc, preco, ar_condic)
 	VALUES
-		('Toyota', 'Corolla', 2020, 80000, TRUE),
+		('Toyota', 'Corolla', 2020, 80000, TRUE), 
 		('Honda', 'Civic', 2019, 85000, TRUE),
 		('Ford', 'Focus', 2018, 75000, FALSE),
 		('Chevrolet', 'Cruze', 2021, 90000, TRUE),
@@ -83,12 +83,12 @@ INSERT INTO carros
 INSERT INTO compras
 (id_cliente, id_carro, data_compra)
 	VALUES
-		(3, 2, '2024-06-08'),
-		(1, 5, '2024-06-10'),
-		(4, 1, '2024-06-11'),
-		(2, 3, '2024-06-12'),
-		(5, 4, '2024-06-13'),
-		(6, 7, '2024-06-14');
+		(3, 2, '2024-06-08'), -- Compra associada ao cliente Carlos Lima (Honda Civic)
+		(1, 5, '2024-06-10'), -- Compra associada ao cliente João Silva (Volkswagen Jetta)
+		(4, 1, '2024-06-11'), -- Compra associada à cliente Ana Pereira (Toyota Corolla)
+		(2, 3, '2024-06-12'), -- Compra associada à cliente Maria Souza (Ford Focus)
+		(5, 4, '2024-06-13'), -- Compra associada ao cliente Pedro Oliveira (Chevrolet Cruze)
+		(6, 7, '2024-06-14'); -- Compra associada à cliente Fernanda Santos (Nissan Sentra)
 
 -- Modificando o nome e o cpf do cliente de "id" 6.
 UPDATE clientes SET nome = 'Matheus Costa Gomes', cpf = '04275457307' WHERE id = 6;

@@ -1,4 +1,4 @@
-# Questão 03) Adicione uma constraint de restrição única na coluna "email" da tabela "clientes" para garantir que nenhum cliente possa ter o mesmo endereço de e-mail.
+-- Questão 03) Adicione uma constraint de restrição única na coluna "email" da tabela "clientes" para garantir que nenhum cliente possa ter o mesmo endereço de e-mail.
 
 -- Criando a tabela com nome "clientes".
 CREATE TABLE clientes(

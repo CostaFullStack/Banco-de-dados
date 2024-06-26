@@ -1,7 +1,7 @@
-# Questão 01) Crie um banco de dados chamado"escola" e as seguintes tabelas:
-#Tabela "alunos" com colunas: id_aluno, nome, idade.
-#Tabela "cursos" com colunas: id_curso, nome_curso, carga_horaria. 
-#Tabela "matriculas" com colunas: id_matricula , id_aluno, id_curso, data_matricula.
+-- Questão 01) Crie um banco de dados chamado"escola" e as seguintes tabelas:
+-- Tabela "alunos" com colunas: id_aluno, nome, idade.
+-- Tabela "cursos" com colunas: id_curso, nome_curso, carga_horaria. 
+-- Tabela "matriculas" com colunas: id_matricula , id_aluno, id_curso, data_matricula.
 
 -- Utilizando "DATABASE" com nome "questao_um".
 CREATE DATABASE questao_um;
@@ -9,22 +9,21 @@ CREATE DATABASE questao_um;
 -- Utilizando "USE" para utilizar o "DATABASE" "questao_um".
 USE questao_um;
 
--- Criando a tabela alunos.
+-- Criando a tabela com nome "alunos".
 CREATE TABLE alunos(
 	id_aluno INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     idade INT
 );
 
--- Criando a tabela cursos.
+-- Criando a tabela com nome "cursos".
 CREATE TABLE cursos(
 	id_curso INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
-    carga_horaria INT
-    
+    carga_horaria INT  
 );
 
--- Criando a tabela matrículas.
+-- Criando a tabela com nome "matriculas".
 CREATE TABLE matriculas(
 	id_matricula INT AUTO_INCREMENT PRIMARY KEY,
     id_aluno INT,
