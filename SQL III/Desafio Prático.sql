@@ -83,7 +83,7 @@ SELECT
 FROM autores
 -- Utilizando "INNER JOIN" para retornar os registros do nome dos autores da tabela "autores" à esquerda e os registros do título dos livros da tabela "livros" à direita. Caso não haja correspondência, os resultados dos títulos e nome dos autores dos livros não serão retornados.
 INNER JOIN livros ON autores.autor_id = livros.autor_id
--- Utilizando "INNER JOIN" para retornar os registros dos livros da tabela "livros" dos autores que tiveram seus livros emprestados. Caso não haja correspondência, ou seja, caso os resultados dos títulos e nome dos autores dos livros que não tiveram empréstimos realizados, não serão retornados.
+-- Utilizando "INNER JOIN" para retornar os registros dos livros da tabela "livros" dos autores que tiveram os seus livros emprestados. Caso não haja correspondência, ou seja, os autores dos livros que não tiverem empréstimos realizados, não serão retornados.
 INNER JOIN emprestimos ON livros.livro_id = emprestimos.livro_id
 -- Utilizando o "ORDER BY" para retornar o nome dos autores em ordem alfabética e a data de empréstimo em ordem crescente.
 ORDER BY
